@@ -1,75 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Portfolio | B.Tech AIML</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body class="bg-gray-50 font-sans leading-normal tracking-normal">
-
-    <nav class="bg-blue-600 p-4 shadow-lg text-white">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold tracking-tight">DevOps Lab</h1>
-            <div class="space-x-4">
-                <span class="bg-blue-700 px-3 py-1 rounded-full text-sm">Status: Live</span>
-            </div>
+{% extends "layout.html" %}
+{% block content %}
+<section class="bg-white border-b py-20">
+    <div class="container mx-auto px-6 text-center">
+        <span class="bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-xs font-bold uppercase">Lab Practical
+            #1</span>
+        <h1 class="text-5xl md:text-6xl font-black text-slate-900 mt-6 mb-6">Automated Cloud <br><span
+                class="text-blue-600">Deployment Pipeline</span></h1>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            Integrating Flask development with Continuous Deployment (CD). This site was automatically built from GitHub
+            source and hosted on Render cloud infrastructure.
+        </p>
+        <div class="mt-10 flex justify-center space-x-4">
+            <a href="/about"
+                class="bg-blue-600 text-white px-8 py-3 rounded-md font-bold hover:bg-blue-700 transition shadow-lg">View
+                Principles</a>
+            <a href="https://github.com"
+                class="border border-gray-300 text-gray-700 px-8 py-3 rounded-md font-bold hover:bg-gray-50 transition">View
+                Source</a>
         </div>
-    </nav>
+    </div>
+</section>
 
-    <header class="py-16 bg-white border-b">
-        <div class="container mx-auto text-center px-4">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-                Flask & DevOps Implementation
-            </h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                Successfully deployed using a CI/CD pipeline. This project demonstrates the integration of Flask,
-                GitHub, and Render.
-            </p>
+<section class="container mx-auto px-6 -mt-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-8 rounded-xl shadow-xl border-b-4 border-blue-500">
+            <i class="fas fa-code text-blue-500 text-3xl mb-4"></i>
+            <h3 class="font-bold text-lg">Flask Backend</h3>
+            <p class="text-gray-500 text-sm mt-2">Dynamic Python routing and server-side logic handling.</p>
         </div>
-    </header>
-
-    <main class="container mx-auto py-12 px-4">
-        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
-            <div class="md:w-1/3 bg-blue-500 flex items-center justify-center p-8 text-white">
-                <div class="text-center">
-                    <div class="text-6xl mb-2">🚀</div>
-                    <p class="font-bold uppercase tracking-wider">Deployment</p>
-                </div>
-            </div>
-
-            <div class="p-8 md:w-2/3">
-                <h3 class="text-2xl font-bold text-gray-800 mb-4">Practical Overview</h3>
-                <ul class="space-y-4">
-                    <li class="flex items-start">
-                        <span class="text-blue-500 mr-2">✔</span>
-                        <p><strong>Framework:</strong> Developed using Flask (Python).</p>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-blue-500 mr-2">✔</span>
-                        <p><strong>Automation:</strong> Automated deployment via GitHub Actions/Render.</p>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-blue-500 mr-2">✔</span>
-                        <p><strong>DevOps Principle:</strong> Implementation of Infrastructure as Code and Continuous
-                            Deployment.</p>
-                    </li>
-                </ul>
-
-                <div class="mt-8 pt-6 border-t border-gray-100">
-                    <p class="text-sm text-gray-500 uppercase font-semibold">Student Details</p>
-                    <p class="text-gray-700 font-medium">B.Tech 3rd Year - AIML Department</p>
-                </div>
-            </div>
+        <div class="bg-white p-8 rounded-xl shadow-xl border-b-4 border-green-500">
+            <i class="fab fa-github text-green-500 text-3xl mb-4"></i>
+            <h3 class="font-bold text-lg">Version Control</h3>
+            <p class="text-gray-500 text-sm mt-2">Git-based workflow for tracking and managing source code changes.</p>
         </div>
-    </main>
-
-    <footer class="bg-gray-800 text-gray-400 py-6 text-center">
-        <p>&copy; 2026 DevOps Practical | Built with Flask & Tailwind</p>
-    </footer>
-
-</body>
-
-</html>
+        <div class="bg-white p-8 rounded-xl shadow-xl border-b-4 border-purple-500">
+            <i class="fas fa-cloud-upload-alt text-purple-500 text-3xl mb-4"></i>
+            <h3 class="font-bold text-lg">Auto-Deployment</h3>
+            <p class="text-gray-500 text-sm mt-2">Seamless CD pipeline using Render cloud web services.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

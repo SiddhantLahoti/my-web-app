@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container mx-auto px-6 py-16">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 flex items-center">
+            <i class="fas fa-book-reader mr-3 text-blue-600"></i> DevOps: Principles & Practices
+        </h2>
+
+        <div class="space-y-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-600">
+                <h4 class="font-bold text-xl text-slate-800">1. Continuous Integration (CI)</h4>
+                <p class="text-gray-600 mt-2">The practice of merging all developer working copies to a shared mainline
+                    (GitHub) several times a day to detect errors early.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-600">
+                <h4 class="font-bold text-xl text-slate-800">2. Continuous Deployment (CD)</h4>
+                <p class="text-gray-600 mt-2">Automating the entire release process. When code is pushed to 'Main', it
+                    is automatically built, tested, and deployed to Render.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-600">
+                <h4 class="font-bold text-xl text-slate-800">3. DevOps Engineer Role</h4>
+                <p class="text-gray-600 mt-2 leading-relaxed">
+                    A DevOps engineer bridges the gap between software development and IT operations. Responsibilities
+                    include managing CI/CD pipelines, ensuring environment consistency, and monitoring system health.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
